@@ -74,12 +74,12 @@ h3 {
   cursor: default;
 }
 
-.idea-container {
+.todo-container {
   display: flex;
   flex-direction: column;
 }
 
-.idea-card {
+.todo-card {
   border-bottom: 2px solid #D1D3D4;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
@@ -103,18 +103,18 @@ h3 {
 }
 
 
-.idea-title, .quality {
+.todo-title, .quality {
   color: #6D6E71;
   font-family: "Roboto Slab", sans-serif;
 }
 
-.idea-title {
+.todo-title {
   font-size: 32px;
   margin-bottom: 20px;
   outline: none;
 }
 
-.idea-body {
+.todo-body {
   color: #939598;
   font-size: 24px;
   line-height: 125%;
@@ -206,7 +206,7 @@ h3 {
     width: 88%;
   }
 
-  .idea-card {
+  .todo-card {
     width: 85%;
   }
 
@@ -244,15 +244,15 @@ h3 {
     width: 87%;
   }
 
-  .idea-card {
+  .todo-card {
     width: 80%;
   }
 
-  .idea-title {
+  .todo-title {
     font-size: 28px;
   }
 
-  .idea-body, .quality, h3 {
+  .todo-body, .quality, h3 {
     font-size: 18px;
   }
 
