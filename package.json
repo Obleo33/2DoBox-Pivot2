@@ -12,8 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/kfarias/2DoBox-Pivot2.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "to",
+    "do",
+    "box"
+  ],
+  "author": "Kenia Farias, Franklin",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kfarias/2DoBox-Pivot2/issues"
   },
@@ -29,6 +34,7 @@
     "node-sass": "^4.3.0",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
+    "svg-url-loader": "^1.1.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
