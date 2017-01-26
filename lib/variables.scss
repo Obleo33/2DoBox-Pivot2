@@ -1,0 +1,10 @@
+$backgroundColor: #E5F3F2;
+$todoBodyColor: #939598;
+$headerFontColor: #6D6E71;
+$inputTextAreaBorder: 2px solid lightgray;
+$headerFont: "Roboto Slab", sans-serif;
+$inputTextAreaFont: "Open Sans", sans-serif;
+
+@mixin alignCenter{
+  text-align: center;
+}
