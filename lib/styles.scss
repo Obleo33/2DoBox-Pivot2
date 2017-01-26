@@ -90,7 +90,7 @@ h3 {
 }
 
 .up-vote, .down-vote, .delete-btn {
-  background-color: transparent;
+  // background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   border-radius: 50%;
@@ -106,16 +106,16 @@ h3 {
 }
 
 .up-vote {
-  background: url(../images/upvote.svg);
+  background-image: url(../images/upvote.svg);
   left: -10px;
 }
 
 .up-vote:hover {
-  background: url(../images/upvote-hover.svg);
+  background-image: url(../images/upvote-hover.svg);
 }
 
 .down-vote {
-  background: url(../images/downvote.svg);
+  background-image: url(../images/downvote.svg);
   left: 45px;
 }
 
