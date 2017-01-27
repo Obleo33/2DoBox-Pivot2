@@ -41,11 +41,14 @@ h3 {
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 
 .text-search{
   display: flex;
   flex-direction: row;
+  width: 85%;
+  align-items: center;
 }
 
 // .input-search, .sort-btn {
@@ -57,6 +60,7 @@ h3 {
 }
 
 .sort-btn {
+  margin-top: 20px;
   font-size: 20px;
   height: 46px;
   width: 50px;
@@ -64,14 +68,12 @@ h3 {
 
 
 .quality-sort {
-
+  display: flex;
 }
 
 .quality-btn {
   height: 20px;
   width: 50px;
-  display: flex;
-
 }
 
 .todo-container {
@@ -188,7 +190,6 @@ input:focus, textarea:focus {
   font-size: 26px;
   height: 45px;
   margin: 0 auto;
-  margin-bottom: 20px;
   width: 55%;
 }
 
