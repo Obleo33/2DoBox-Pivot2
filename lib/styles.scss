@@ -37,6 +37,45 @@ h3 {
   @include alignCenter;
 }
 
+.search-sort-fields {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.text-search{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  align-items: center;
+}
+
+// .input-search, .sort-btn {
+//   margin: 20px 5px;
+// }
+
+.input-search {
+  width: 47%;
+}
+
+.sort-btn {
+  margin-top: 20px;
+  font-size: 20px;
+  height: 46px;
+  width: 50px;
+}
+
+
+.quality-sort {
+  display: flex;
+}
+
+.quality-btn {
+  height: 20px;
+  width: 50px;
+}
+
 .todo-container {
   display: flex;
   flex-direction: column;
@@ -50,7 +89,6 @@ h3 {
   padding-bottom: 10px;
   position: relative;
   width: 55%;
-
 }
 
 .quality, h3 {
@@ -90,7 +128,7 @@ h3 {
 }
 
 .up-vote, .down-vote, .delete-btn {
-  background-color: transparent;
+    // background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   border-radius: 50%;
@@ -106,7 +144,7 @@ h3 {
 }
 
 .up-vote {
-  background: url(../images/upvote.svg);
+  background-image: url(../images/upvote.svg);
   left: -10px;
 }
 
@@ -115,7 +153,7 @@ h3 {
 }
 
 .down-vote {
-  background: url(../images/downvote.svg);
+  background-image: url(../images/downvote.svg);
   left: 45px;
 }
 
@@ -124,10 +162,134 @@ h3 {
 }
 
 .delete-btn {
-  background: url(../images/delete.svg);
+  background-image: url(../images/delete.svg);
   float: right;
 }
 
 .delete-btn:hover {
   background: url(../images/delete-hover.svg);
+}
+
+span {
+  color: #00A79D;
+}
+
+article {
+  margin: 0 100px;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #00A79D;
+}
+
+.save-btn, .sort-btn {
+  background-color: #00A79D;
+  border: none;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  height: 45px;
+  margin: 0 auto;
+  width: 55%;
+}
+
+.save-btn:hover, .sort-btn:hover {
+  background-color: #045E55;
+  cursor: pointer;
+  outline: none;
+}
+
+.save-btn:focus, .sort-btn:focus {
+  border: 2px solid #045E55;
+  outline: none;
+}
+
+.save-btn:disabled {
+  background: lightgray;
+  cursor: default;
+}
+
+.time-stamp {
+  bottom: 0;
+  color: lightgray;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+}
+
+
+
+@media screen and (max-width: 768px){
+  input, textarea {
+    width: 85%;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  .save-btn {
+    width: 88%;
+  }
+
+  .todo-card {
+    width: 85%;
+  }
+
+
+    .input-search {
+      width: 77%;
+    }
+
+    .sort-btn {
+      font-size: 16px;
+      height: 46px;
+      width: 50px;
+    }
+}
+
+@media screen and (max-width: 420px){
+  header{
+    font-size: 42px;
+  }
+  input, textarea {
+    font-size: 24px;
+    height: 36px;
+    width: 80%;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  article {
+    display: flex;
+  }
+
+  .save-btn {
+    width: 87%;
+  }
+
+  .todo-card {
+    width: 80%;
+  }
+
+  .todo-title {
+    font-size: 28px;
+  }
+
+  .todo-body, .quality, h3 {
+    font-size: 18px;
+  }
+
+
+    .input-search {
+      width: 60%;
+    }
+
+    .sort-btn {
+      width: 50px;
+      height: 40px;
+      font-size: 14px;
+    }
 }
