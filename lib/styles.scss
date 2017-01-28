@@ -61,7 +61,6 @@ h3 {
   margin-top: 20px;
   font-size: 20px;
   height: 46px;
-  width: 50px;
 }
 
 
@@ -72,7 +71,17 @@ h3 {
 .quality-btn {
   margin: 2px 5px;
   height: 20px;
-  width: 70px;
+  width: 100px;
+  background-color: $buttonColor;
+  outline: none;
+  border: none;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.quality-filter {
+  background-color: $hoverOrSelected;
 }
 
 .todo-container {
@@ -170,7 +179,7 @@ h3 {
 }
 
 span {
-  color: #00A79D;
+  color: $buttonColor;
 }
 
 article {
@@ -178,11 +187,11 @@ article {
 }
 
 input:focus, textarea:focus {
-  border: 2px solid #00A79D;
+  border: 2px solid $buttonColor;
 }
 
 .save-btn, .sort-btn {
-  background-color: #00A79D;
+  background-color: $buttonColor;
   border: none;
   color: #FFFFFF;
   font-family: "Open Sans", sans-serif;
@@ -193,13 +202,13 @@ input:focus, textarea:focus {
 }
 
 .save-btn:hover, .sort-btn:hover {
-  background-color: #045E55;
+  background-color: $hoverOrSelected;
   cursor: pointer;
   outline: none;
 }
 
 .save-btn:focus, .sort-btn:focus {
-  border: 2px solid #045E55;
+  border: 2px solid $hoverOrSelected;
   outline: none;
 }
 
