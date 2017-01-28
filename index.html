@@ -11,9 +11,10 @@
     <h1><span>ToDo</span>Box</h1>
   </header>
     <section class="input-fields">
-      <input class="title-input" type="text" placeholder="Title" name="title">
-      <textarea class="todo-input" type="text" placeholder="Body" name="todo"></textarea>
-      <button class="save-btn" type="button" name="saveBtn" disabled>save</button>
+
+      <input class="title-input" aria-label="todo title" type="text" placeholder="Title" name="title">
+      <textarea class="todo-input" aria-label="todo description" type="text" placeholder="Body" name="todo"></textarea>
+      <button class="save-btn" aria-label="save todo" type="button" name="saveBtn" disabled>save</button>
     </section>
 
     <section class="search-sort-fields">
@@ -22,7 +23,6 @@
         <button class="sort-btn" type="text" name="sort-btn">Sort</button>
       </div>
       <div class="quality-sort">
-        <button class="quality-btn none-btn" type="button" name="All">All</button>
         <button class="quality-btn none-btn" type="button" name="None">None</button>
         <button class="quality-btn low-btn" type="button" name="Low">Low</button>
         <button class="quality-btn normal-btn" type="button" name="Normal">Normal</button>
