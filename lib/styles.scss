@@ -40,13 +40,11 @@ h3 {
 .search-sort-fields {
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
 }
 
 .text-search{
   display: flex;
-  flex-direction: row;
   width: 85%;
   align-items: center;
 }
@@ -68,12 +66,13 @@ h3 {
 
 
 .quality-sort {
-  display: flex;
+  align-content: space-between;
 }
 
 .quality-btn {
+  margin: 2px 5px;
   height: 20px;
-  width: 50px;
+  width: 70px;
 }
 
 .todo-container {
