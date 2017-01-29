@@ -45,7 +45,7 @@ h3 {
 
 .text-search{
   display: flex;
-  width: 85%;
+  width: 100%;
   align-items: center;
 }
 
@@ -54,7 +54,7 @@ h3 {
 // }
 
 .input-search {
-  width: 47%;
+  width: 53%;
 }
 
 .sort-btn {
@@ -70,8 +70,8 @@ h3 {
 
 .quality-btn {
   margin: 2px 5px;
-  height: 20px;
-  width: 100px;
+  height: 25px;
+  width: 60px;
   background-color: $buttonColor;
   outline: none;
   border: none;

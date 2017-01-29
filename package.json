@@ -30,6 +30,7 @@
     "chai": "^3.5.0",
     "child_process": "^1.0.2",
     "css-loader": "^0.26.1",
+    "edge": "^6.5.1",
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "mocha-loader": "^1.1.0",
