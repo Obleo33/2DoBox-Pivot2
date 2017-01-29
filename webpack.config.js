@@ -24,5 +24,9 @@ module.exports = {
   },
   node: {
     console: true,
+    fs: "empty",
+    child_process: 'empty',
+    net: "empty",
+    readline: 'empty'
   }
 };
