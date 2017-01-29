@@ -24,5 +24,6 @@ module.exports = {
   },
   node: {
     console: true,
+    "child_process": "empty"
   }
 };
