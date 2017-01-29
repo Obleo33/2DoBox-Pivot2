@@ -49,6 +49,11 @@ h3 {
   align-items: center;
 }
 
+.result {
+  font-family: $headerFont;
+  color: $hoverOrSelected;
+}
+
 // .input-search, .sort-btn {
 //   margin: 20px 5px;
 // }
@@ -61,6 +66,17 @@ h3 {
   margin-top: 20px;
   font-size: 20px;
   height: 46px;
+}
+
+.complete-task {
+  border: none;
+  background-color: $buttonColor;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: $inputTextAreaFont;
+  &:hover {
+    background-color: $hoverOrSelected;
+  }
 }
 
 
@@ -76,7 +92,7 @@ h3 {
   outline: none;
   border: none;
   color: #FFFFFF;
-  font-family: "Open Sans", sans-serif;
+  font-family: $inputTextAreaFont;
   font-size: 14px;
 }
 
