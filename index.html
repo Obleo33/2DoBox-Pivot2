@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+
+
+
+<html lang="en">
   <head>
     <title>ToDo Box</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
@@ -11,7 +14,6 @@
     <h1><span>ToDo</span>Box</h1>
   </header>
     <section class="input-fields">
-
       <input class="title-input" aria-label="todo title" type="text" placeholder="Title" name="title">
       <textarea class="todo-input" aria-label="todo description" type="text" placeholder="Body" name="todo"></textarea>
       <button class="save-btn" aria-label="save todo" type="button" name="saveBtn" disabled>save</button>
@@ -19,21 +21,21 @@
 
     <section class="search-sort-fields">
       <div class="text-search">
-        <input class="input-search" type="text" placeholder="Type to search">
+        <input class="input-search" aria-label="text search" type="text" placeholder="Type to search">
         <!-- <button class="sort-btn" type="text" name="sort-btn">Sort</button> -->
       </div>
       <div class="quality-sort">
-        <button class="quality-btn none-btn" type="button" name="None">None</button>
-        <button class="quality-btn low-btn" type="button" name="Low">Low</button>
-        <button class="quality-btn normal-btn" type="button" name="Normal">Normal</button>
-        <button class="quality-btn high-btn" type="button" name="High">High</button>
-        <button class="quality-btn critical-btn" type="button" name="Critical">Critical</button>
+        <button class="quality-btn none-btn" aria-label="none quality filter" type="button" name="None">None</button>
+        <button class="quality-btn low-btn" aria-label="low quality filter" type="button" name="Low">Low</button>
+        <button class="quality-btn normal-btn" aria-label="normal quality filter" type="button" name="Normal">Normal</button>
+        <button class="quality-btn high-btn" aria-label="high quality filter" type="button" name="High">High</button>
+        <button class="quality-btn critical-btn" aria-label="critical quality filter" type="button" name="Critical">Critical</button>
       </div>
     </section>
 
-    <section class="todo-container">
+    <ul class="todo-container">
       <!--todo cards here-->
-    </section>
+    </ul>
 
   </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
