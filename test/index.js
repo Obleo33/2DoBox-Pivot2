@@ -45,7 +45,7 @@ test.describe('input fields', function(){
      assert.equal(text, 'edit this is a title');
    });
  });
- test.it.only('should filter todos based on a search string live', ()=>{
+ test.it('should filter todos based on a search string live', ()=>{
    const title      = driver.findElement({name: 'title'});
    const task       = driver.findElement({name: 'todo'});
    const saveBtn    = driver.findElement({name: 'saveBtn'});
@@ -63,4 +63,82 @@ test.describe('input fields', function(){
       assert.equal(displayed,false);
    });
   });
+
+  test.it('should move up the quality array when the up vote button is pressed and stop at critical',()=>{
+    const title = driver.findElement({name: 'title'});
+    const task = driver.findElement({name: 'todo'});
+    const saveBtn = driver.findElement({name:'saveBtn'});
+    title.sendKeys('this is a title');
+    task.sendKeys('this is a todo');
+    saveBtn.click();
+    const upVote    = driver.findElement({className: 'up-vote'});
+    const downVote  = driver.findElement({className: 'down-vote'});
+    const quality   = driver.findElement({className: 'quality'});
+
+    quality.getText().then((q)=>{
+      assert.equal(q,'None');
+    });
+    upVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'Low');
+    });
+    upVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'Normal');
+    });
+    upVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'High');
+    });
+    upVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'Critical');
+    });
+    upVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'Critical');
+    });
+  });
+
+  test.it('should move down the quality array when the down vote button is pressed and stop at none',()=>{
+    const title = driver.findElement({name: 'title'});
+    const task = driver.findElement({name: 'todo'});
+    const saveBtn = driver.findElement({name:'saveBtn'});
+    title.sendKeys('this is a title');
+    task.sendKeys('this is a todo');
+    saveBtn.click();
+    const upVote    = driver.findElement({className: 'up-vote'});
+    const downVote  = driver.findElement({className: 'down-vote'});
+    const quality   = driver.findElement({className: 'quality'});
+
+    for (let i = 0; i<5;i++){
+      upVote.click();
+    }
+
+    quality.getText().then((q)=>{
+      assert.equal(q,'Critical');
+    });
+    downVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'High');
+    });
+    downVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'Normal');
+    });
+    downVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'Low');
+    });
+    downVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'None');
+    });
+    downVote.click();
+    quality.getText().then((q)=>{
+      assert.equal(q,'None');
+    });
+  });
+
+  
 });
