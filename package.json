@@ -29,6 +29,7 @@
     "babel-preset-latest": "^6.22.0",
     "chai": "^3.5.0",
     "css-loader": "^0.26.1",
+    "edge": "^6.5.1",
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "mocha-loader": "^1.1.0",
