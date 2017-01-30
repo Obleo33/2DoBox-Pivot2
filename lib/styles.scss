@@ -170,17 +170,17 @@ h3 {
   outline: none;
   width: 40px;
 }
-
-.up-vote, .down-vote {
-  bottom: 35px;
-  background-color: $buttonColor;
-  color: $lightText;
-  font-size: 14px;
-  position: absolute;
-  &:hover {
-    background-color: $hoverOrSelected;
-  }
-}
+// 
+// .up-vote, .down-vote {
+//   bottom: 35px;
+//   background-color: $buttonColor;
+//   color: $lightText;
+//   font-size: 14px;
+//   position: absolute;
+//   &:hover {
+//     background-color: $hoverOrSelected;
+//   }
+// }
 
 .up-vote {
   left: -10px;
@@ -190,14 +190,14 @@ h3 {
   left: 45px;
 }
 
-.delete-btn {
-  background-color: $deleteColor;
-  float: right;
-  font-size: 14px;
-  &:hover {
-    background-color: $deleteHover;
-  }
-}
+// .delete-btn {
+//   background-color: $deleteColor;
+//   float: right;
+//   font-size: 14px;
+//   &:hover {
+//     background-color: $deleteHover;
+//   }
+// }
 
 
 span {
@@ -223,6 +223,7 @@ input:focus, textarea:focus {
   width: 55%;
   &:hover {
     background-color: $hoverOrSelected;
+  }
 }
 
 .save-btn:disabled {

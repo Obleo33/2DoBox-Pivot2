@@ -1,7 +1,6 @@
 const assert    = require('assert');
 const webdriver = require('selenium-webdriver');
 const test      = require('selenium-webdriver/testing');
-require('locus');
 
 const Buttons   = require('../lib/buttons.js');
 
