@@ -182,8 +182,9 @@ h3 {
 .show-completed-btn {
   color: #FFFFFF;
   border: none;
-  background-color: $buttonColor;
+  // background-color: $buttonColor;
   margin-top: 15px;
+  outline: none;
 
   font-family: $inputTextAreaFont;
   font-size: 14px;
