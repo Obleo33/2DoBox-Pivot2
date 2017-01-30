@@ -17,7 +17,7 @@ test.describe('input fields', function(){
  });
 
  afterEach(()=>{
-    // driver.quit();
+    driver.quit();
  });
 
  test.it('should allow me to add a title and a todo', ()=>{
