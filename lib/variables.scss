@@ -1,5 +1,6 @@
 $backgroundColor: #E5F3F2;
 $lightText: #FFFFFF;
+$completedTodo: #d9dce0;
 $todoBodyColor: #939598;
 $headerFontColor: #6D6E71;
 $buttonColor: #00A79D;
@@ -12,4 +13,15 @@ $inputTextAreaFont: "Open Sans", sans-serif;
 
 @mixin alignCenter{
   text-align: center;
+}
+
+@mixin buttonStyling {
+  color: $lightText;
+  border: none;
+  outline: none;
+  background-color: $buttonColor;
+  font-family: $inputTextAreaFont;
+  &:hover {
+    background-color: $hoverOrSelected;
+  }
 }

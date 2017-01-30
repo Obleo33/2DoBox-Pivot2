@@ -70,11 +70,8 @@ h3 {
 }
 
 .complete-task {
-  border: none;
-  background-color: $buttonColor;
-  color: #FFFFFF;
+  @include buttonStyling;
   font-size: 14px;
-  font-family: $inputTextAreaFont;
   &:hover {
     background-color:$hoverOrSelected;
   }
@@ -85,24 +82,15 @@ h3 {
 }
 
 .quality-btn {
+  @include buttonStyling;
   width: 60px;
   height: 25px;
   margin: 2px 5px;
-
-  color: #FFFFFF;
-  border: none;
-  outline: none;
-  background-color: $buttonColor;
-
-  font-family: $inputTextAreaFont;
   font-size: 14px;
   height: 25px;
   margin: 2px 5px;
   outline: none;
   width: 60px;
-  &:hover {
-    background-color: $hoverOrSelected;
-  }
 }
 
 .quality-filter {
@@ -118,7 +106,7 @@ h3 {
 .todo-card {
   border-bottom: 2px solid #D1D3D4;
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
+  font-family: $inputTextAreaFont;
   margin: 25px auto;
   padding-bottom: 10px;
   position: relative;
@@ -138,7 +126,7 @@ h3 {
 }
 
 .grey-background{
-  background: #d9dce0;
+  background: $completedTodo;
   text-decoration: line-through;
 }
 
@@ -180,16 +168,9 @@ h3 {
 }
 
 .show-completed-btn {
-  color: #FFFFFF;
-  border: none;
-  background-color: $buttonColor;
+  @include buttonStyling;
   margin-top: 15px;
-
-  font-family: $inputTextAreaFont;
   font-size: 14px;
-  &:hover {
-    background-color: $hoverOrSelected;
-  }
 }
 
 span {
@@ -205,17 +186,12 @@ input:focus, textarea:focus {
 }
 
 .save-btn{
-  background-color: $buttonColor;
-  border: none;
-  color: $lightText;
-  font-family: "Open Sans", sans-serif;
+  @include buttonStyling;
   font-size: 26px;
   height: 45px;
   margin: 0 auto;
   width: 55%;
-  &:hover {
-    background-color: $hoverOrSelected;
-  }
+
 }
 
 .save-btn:disabled {
