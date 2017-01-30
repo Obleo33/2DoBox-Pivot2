@@ -168,11 +168,17 @@ h3 {
 }
 
 .show-completed-btn {
-  @include buttonStyling;
-  margin-top: 15px;
+  color: #FFFFFF;
+  border: none;
+  // background-color: $buttonColor;
   margin-top: 15px;
   outline: none;
+
+  font-family: $inputTextAreaFont;
   font-size: 14px;
+  &:hover {
+    background-color: $hoverOrSelected;
+  }
 }
 
 span {
