@@ -170,6 +170,8 @@ h3 {
 .show-completed-btn {
   @include buttonStyling;
   margin-top: 15px;
+  margin-top: 15px;
+  outline: none;
   font-size: 14px;
 }
 
