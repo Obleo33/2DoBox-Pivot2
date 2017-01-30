@@ -1,29 +1,36 @@
 @import "variables.scss";
 
 header {
-  background-color: $backgroundColor;
+  padding-top: 35px;
+  padding-bottom: 20px;
+
   color: $headerFontColor;
+  background-color: $backgroundColor;
+
   font-family: $headerFont;
   font-size: 64px;
   font-weight: 700;
-  padding-top: 35px;
-  padding-bottom: 20px;
+
   @include alignCenter;
 }
 
 input, textarea {
-  border: $inputTextAreaBorder;
   display: block;
+  overflow: hidden;
+
+  width: 53%;
+  height: 42px;
+  margin: 20px auto;
+  padding: 0 10px;
+
+  resize: none;
+
+  border: $inputTextAreaBorder;
+  outline: none;
+
   font-family: $inputTextAreaFont;
   font-size: 26px;
   font-weight: 700;
-  height: 42px;
-  margin: 20px auto;
-  outline: none;
-  overflow: hidden;
-  padding: 0 10px;
-  resize: none;
-  width: 53%;
 }
 
 h3 {
@@ -31,9 +38,11 @@ h3 {
 }
 
 .input-fields {
-  background-color: $backgroundColor;
   padding-top: 1px;
   padding-bottom: 20px;
+
+  background-color: $backgroundColor;
+
   @include alignCenter;
 }
 
@@ -41,12 +50,14 @@ h3 {
   align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .text-search{
   align-items: center;
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .result {
@@ -68,15 +79,21 @@ h3 {
     background-color:$hoverOrSelected;
   }
 }
-//
-// .quality-sort {
-//   align-content: space-between;
-// }
+
+.quality-sort {
+  align-content: space-between;
+}
 
 .quality-btn {
+  width: 60px;
+  height: 25px;
+  margin: 2px 5px;
+
+  color: #FFFFFF;
   border: none;
+  outline: none;
   background-color: $buttonColor;
-  color: $lightText;
+
   font-family: $inputTextAreaFont;
   font-size: 14px;
   height: 25px;
@@ -182,6 +199,7 @@ h3 {
   }
 }
 
+
 span {
   color: $buttonColor;
 }
@@ -205,12 +223,9 @@ input:focus, textarea:focus {
   width: 55%;
   &:hover {
     background-color: $hoverOrSelected;
-
-  }
 }
 
 .save-btn:disabled {
-  background: lightgray;
   cursor: default;
 }
 
@@ -220,4 +235,6 @@ input:focus, textarea:focus {
   font-size: 12px;
   position: absolute;
   right: 0;
+
+  background: lightgray;
 }

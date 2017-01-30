@@ -1,0 +1,135 @@
+@import "variables.scss";
+
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-card {
+  position: relative;
+
+  display: inline-block;
+
+  width: 55%;
+  margin: 25px auto;
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid #D1D3D4;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.quality, h3 {
+  display: inline-block;
+
+  margin: 0 2px;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+}
+
+.quality {
+  font-family: $inputTextAreaFont;
+  font-size: 20px;
+}
+
+.grey-background{
+  text-decoration: line-through;
+
+  background: #d9dce0;
+}
+
+.todo-title, .quality {
+  color: $headerFontColor;
+
+  font-family: $headerFont;
+}
+
+.todo-title {
+  margin-bottom: 20px;
+
+  outline: none;
+
+  font-size: 32px;
+}
+
+.todo-body {
+  margin-bottom: 30px;
+
+  color: $todoBodyColor;
+  outline: none;
+
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.up-vote, .down-vote, .delete-btn {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  outline: none;
+    // background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.up-vote, .down-vote {
+  position: absolute;
+  bottom: 35px;
+}
+
+.up-vote {
+  left: -10px;
+
+  background-image: url(../images/upvote.svg);
+}
+
+.up-vote:hover {
+  background: url(../images/upvote-hover.svg);
+}
+
+.down-vote {
+  left: 45px;
+
+  background-image: url(../images/downvote.svg);
+}
+
+.down-vote:hover {
+  background: url(../images/downvote-hover.svg);
+}
+
+.delete-btn {
+  float: right;
+
+  background-image: url(../images/delete.svg);
+}
+
+.delete-btn:hover {
+  background: url(../images/delete-hover.svg);
+}
+
+.time-stamp {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  color: lightgray;
+
+  font-size: 12px;
+}
+
+.complete-task {
+  color: #FFFFFF;
+  border: none;
+  background-color: $buttonColor;
+
+  font-family: $inputTextAreaFont;
+  font-size: 14px;
+  &:hover {
+    background-color: $hoverOrSelected;
+  }
+}
