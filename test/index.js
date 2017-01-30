@@ -5,8 +5,7 @@ require('locus');
 
 const Buttons   = require('../lib/buttons.js');
 
-
-test.describe('input fields', function(){
+test.describe('input fields', ()=>{
   this.timeout(10000);
   let driver;
  beforeEach(()=>{
