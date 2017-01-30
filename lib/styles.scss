@@ -1,29 +1,36 @@
 @import "variables.scss";
 
 header {
-  background-color: $backgroundColor;
+  padding-top: 35px;
+  padding-bottom: 20px;
+
   color: $headerFontColor;
+  background-color: $backgroundColor;
+
   font-family: $headerFont;
   font-size: 64px;
   font-weight: 700;
-  padding-top: 35px;
-  padding-bottom: 20px;
+
   @include alignCenter;
 }
 
 input, textarea {
-  border: $inputTextAreaBorder;
   display: block;
+  overflow: hidden;
+
+  width: 53%;
+  height: 42px;
+  margin: 20px auto;
+  padding: 0 10px;
+
+  resize: none;
+
+  border: $inputTextAreaBorder;
+  outline: none;
+
   font-family: $inputTextAreaFont;
   font-size: 26px;
   font-weight: 700;
-  height: 42px;
-  margin: 20px auto;
-  outline: none;
-  overflow: hidden;
-  padding: 0 10px;
-  resize: none;
-  width: 53%;
 }
 
 h3 {
@@ -31,27 +38,33 @@ h3 {
 }
 
 .input-fields {
-  background-color: $backgroundColor;
   padding-top: 1px;
   padding-bottom: 20px;
+
+  background-color: $backgroundColor;
+
   @include alignCenter;
 }
 
 .search-sort-fields {
   display: flex;
   flex-direction: column;
+
   align-items: center;
 }
 
 .text-search{
   display: flex;
+
   width: 100%;
+
   align-items: center;
 }
 
 .result {
-  font-family: $headerFont;
   color: $hoverOrSelected;
+
+  font-family: $headerFont;
 }
 
 // .input-search, .sort-btn {
@@ -63,21 +76,12 @@ h3 {
 }
 
 .sort-btn {
-  margin-top: 20px;
-  font-size: 20px;
   height: 46px;
+  margin-top: 20px;
+
+  font-size: 20px;
 }
 
-.complete-task {
-  border: none;
-  background-color: $buttonColor;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-family: $inputTextAreaFont;
-  &:hover {
-    background-color: $hoverOrSelected;
-  }
-}
 
 
 .quality-sort {
@@ -85,13 +89,15 @@ h3 {
 }
 
 .quality-btn {
-  margin: 2px 5px;
-  height: 25px;
   width: 60px;
-  background-color: $buttonColor;
-  outline: none;
-  border: none;
+  height: 25px;
+  margin: 2px 5px;
+
   color: #FFFFFF;
+  border: none;
+  outline: none;
+  background-color: $buttonColor;
+
   font-family: $inputTextAreaFont;
   font-size: 14px;
 }
@@ -100,99 +106,6 @@ h3 {
   background-color: $hoverOrSelected;
 }
 
-.todo-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.todo-card {
-  border-bottom: 2px solid #D1D3D4;
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  margin: 25px auto;
-  padding-bottom: 10px;
-  position: relative;
-  width: 55%;
-}
-
-.quality, h3 {
-  display: inline-block;
-  font-size: 20px;
-  margin: 0 2px;
-  margin-bottom: 20px;
-}
-
-.quality {
-  font-family: $inputTextAreaFont;
-  font-size: 20px;
-}
-
-.grey-background{
-  background: #d9dce0;
-  text-decoration: line-through;
-}
-
-.todo-title, .quality {
-  color: $headerFontColor;
-  font-family: $headerFont;
-}
-
-.todo-title {
-  font-size: 32px;
-  margin-bottom: 20px;
-  outline: none;
-}
-
-.todo-body {
-  color: $todoBodyColor;
-  font-size: 24px;
-  line-height: 125%;
-  margin-bottom: 30px;
-  outline: none;
-}
-
-.up-vote, .down-vote, .delete-btn {
-    // background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 40px;
-  outline: none;
-  width: 40px;
-}
-
-.up-vote, .down-vote {
-  bottom: 35px;
-  position: absolute;
-}
-
-.up-vote {
-  background-image: url(../images/upvote.svg);
-  left: -10px;
-}
-
-.up-vote:hover {
-  background: url(../images/upvote-hover.svg);
-}
-
-.down-vote {
-  background-image: url(../images/downvote.svg);
-  left: 45px;
-}
-
-.down-vote:hover {
-  background: url(../images/downvote-hover.svg);
-}
-
-.delete-btn {
-  background-image: url(../images/delete.svg);
-  float: right;
-}
-
-.delete-btn:hover {
-  background: url(../images/delete-hover.svg);
-}
 
 span {
   color: $buttonColor;
@@ -207,20 +120,23 @@ input:focus, textarea:focus {
 }
 
 .save-btn, .sort-btn {
-  background-color: $buttonColor;
-  border: none;
-  color: #FFFFFF;
-  font-family: "Open Sans", sans-serif;
-  font-size: 26px;
+  width: 55%;
   height: 45px;
   margin: 0 auto;
-  width: 55%;
+
+  color: #FFFFFF;
+  border: none;
+  background-color: $buttonColor;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
 }
 
 .save-btn:hover, .sort-btn:hover {
-  background-color: $hoverOrSelected;
   cursor: pointer;
+
   outline: none;
+  background-color: $hoverOrSelected;
 }
 
 .save-btn:focus, .sort-btn:focus {
@@ -229,91 +145,7 @@ input:focus, textarea:focus {
 }
 
 .save-btn:disabled {
-  background: lightgray;
   cursor: default;
-}
 
-.time-stamp {
-  bottom: 0;
-  color: lightgray;
-  font-size: 12px;
-  position: absolute;
-  right: 0;
-}
-
-
-
-@media screen and (max-width: 768px){
-  input, textarea {
-    width: 85%;
-  }
-
-  textarea {
-    height: 100px;
-  }
-
-  .save-btn {
-    width: 88%;
-  }
-
-  .todo-card {
-    width: 85%;
-  }
-
-
-    .input-search {
-      width: 77%;
-    }
-
-    .sort-btn {
-      font-size: 16px;
-      height: 46px;
-      width: 50px;
-    }
-}
-
-@media screen and (max-width: 420px){
-  header{
-    font-size: 42px;
-  }
-  input, textarea {
-    font-size: 24px;
-    height: 36px;
-    width: 80%;
-  }
-
-  textarea {
-    height: 100px;
-  }
-
-  article {
-    display: flex;
-  }
-
-  .save-btn {
-    width: 87%;
-  }
-
-  .todo-card {
-    width: 80%;
-  }
-
-  .todo-title {
-    font-size: 28px;
-  }
-
-  .todo-body, .quality, h3 {
-    font-size: 18px;
-  }
-
-
-    .input-search {
-      width: 60%;
-    }
-
-    .sort-btn {
-      width: 50px;
-      height: 40px;
-      font-size: 14px;
-    }
+  background: lightgray;
 }
